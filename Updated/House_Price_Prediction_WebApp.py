@@ -11,21 +11,21 @@ import streamlit as st
 import pandas as pd
 
 #loading. the saved model
-with open("C:/Users/prachet/OneDrive - Vidyalankar Institute of Technology/Desktop/Coding/Machine Learning/ML-Project-3-House_Price_Prediction/Updated/columns.pkl", 'rb') as f:
+with open("Updated/columns.pkl", 'rb') as f:
     all_features = pickle.load(f)
-with open("C:/Users/prachet/OneDrive - Vidyalankar Institute of Technology/Desktop/Coding/Machine Learning/ML-Project-3-House_Price_Prediction/Updated/scaler.pkl", 'rb') as f:
+with open("Updated/scaler.pkl", 'rb') as f:
     scalers = pickle.load(f)
-with open("C:/Users/prachet/OneDrive - Vidyalankar Institute of Technology/Desktop/Coding/Machine Learning/ML-Project-3-House_Price_Prediction/Updated/best_features_lr.json", 'r') as file:
+with open("Updated/best_features_lr.json", 'r') as file:
     best_features_lr = json.load(file)
-with open("C:/Users/prachet/OneDrive - Vidyalankar Institute of Technology/Desktop/Coding/Machine Learning/ML-Project-3-House_Price_Prediction/Updated/best_features_rfr.json", 'r') as file:
+with open("Updated/best_features_rfr.json", 'r') as file:
     best_features_rfr = json.load(file)
-with open("C:/Users/prachet/OneDrive - Vidyalankar Institute of Technology/Desktop/Coding/Machine Learning/ML-Project-3-House_Price_Prediction/Updated/best_features_xgb.json", 'r') as file:
+with open("Updated/best_features_xgb.json", 'r') as file:
     best_features_xgb = json.load(file)
-with open("C:/Users/prachet/OneDrive - Vidyalankar Institute of Technology/Desktop/Coding/Machine Learning/ML-Project-3-House_Price_Prediction/Updated/house_price_prediction_trained_lr_model.sav", 'rb') as f:
+with open("Updated/house_price_prediction_trained_lr_model.sav", 'rb') as f:
     loaded_model_lr = pickle.load(f)
-with open("C:/Users/prachet/OneDrive - Vidyalankar Institute of Technology/Desktop/Coding/Machine Learning/ML-Project-3-House_Price_Prediction/Updated/house_price_prediction_trained_rfr_model.sav", 'rb') as f:
+with open("Updated/house_price_prediction_trained_rfr_model.sav", 'rb') as f:
     loaded_model_rfr = pickle.load(f)
-with open("C:/Users/prachet/OneDrive - Vidyalankar Institute of Technology/Desktop/Coding/Machine Learning/ML-Project-3-House_Price_Prediction/Updated/house_price_prediction_trained_xgb_model.sav", 'rb') as f:
+with open("Updated/house_price_prediction_trained_xgb_model.sav", 'rb') as f:
     loaded_model_xgb = pickle.load(f)
 
 
